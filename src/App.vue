@@ -6,7 +6,7 @@
       </span>
       <hr>
       <span>
-        {{ mensaje }}
+        {{ temperatura | toF }}
       </span>
     </div>
   </div>
@@ -16,12 +16,16 @@
 export default {  
   data() {
     return {
-      mensaje: 'Aprende VueJS fácilmente'
+      mensaje: 'Aprende VueJS fácilmente',
+      temperatura: 1
     }
   },
   filters: {
     capitalize(mensaje) {
       return mensaje.toUpperCase()
+    },
+    toF (value) {
+      return value * (9/5) + 32
     }
   }
 }
