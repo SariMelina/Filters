@@ -2,7 +2,7 @@
   <div class="container">
     <div class="jumbotron">
       <span>
-        {{ mensaje | suspensivos }}
+        {{ mensaje | suspensivos | capitalize }}
       </span>
       <hr>
       <span>
