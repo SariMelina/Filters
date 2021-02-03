@@ -6,7 +6,9 @@
       </span>
       <hr>
       <span>
-        {{ temperatura | toF }}
+        F : {{ temperatura | toF }}
+        <br>
+        C : {{ temperatura }}
       </span>
     </div>
   </div>
